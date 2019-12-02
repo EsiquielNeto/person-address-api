@@ -43,3 +43,10 @@ dependencies {
 	runtimeOnly 'mysql:mysql-connector-java'
 
 }
+
+flyway {
+	url = 'jdbc:mysql://localhost:3306/person_address'
+	user = 'root'
+	password = 'root'
+	schemas = ['person_address']
+}

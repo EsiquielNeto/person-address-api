@@ -5,4 +5,6 @@ create table address (
     street VARCHAR(255) NOT NULL,
     number INT NOT NULL,
     complement VARCHAR(255)
+    created_at DATETIME,
+    UPDATED_AT DATETIME
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
