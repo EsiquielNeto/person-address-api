@@ -29,4 +29,8 @@ public class Address extends AbstractModel {
     @NotBlank
     private String complemnt;
 
+    @ManyToOne
+    @JoinColumn(name = "person_id")
+    private Person person;
+
 }

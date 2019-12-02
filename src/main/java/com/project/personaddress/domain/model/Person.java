@@ -6,6 +6,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "person")
@@ -23,4 +24,7 @@ public class Person extends AbstractModel {
 
     @NotNull
     private LocalDateTime birth;
+
+    @OneToMany(mappedBy = "person")
+    private List<Address> adress;
 }
